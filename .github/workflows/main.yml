@@ -16,8 +16,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: MSVC-Umgebung einrichten
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+
       - name: Konfigurieren
-        run: cmake -B build -G "Visual Studio 17 2022" -A x64
+        run: cmake -B build -G "Ninja Multi-Config"
 
       - name: Bauen (Release)
         run: cmake --build build --config Release --parallel
