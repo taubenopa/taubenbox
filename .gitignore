@@ -1,0 +1,5 @@
+build/
+.vs/
+.idea/
+installer/Output/
+*.user
