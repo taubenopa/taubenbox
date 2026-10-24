@@ -26,9 +26,9 @@ juce_add_plugin(TaubenBox
     COPY_PLUGIN_AFTER_BUILD FALSE)
 
 target_sources(TaubenBox PRIVATE
-    Source/PluginProcessor.cpp
-    Source/PluginEditor.cpp
-    Source/Presets.cpp)
+    PluginProcessor.cpp
+    PluginEditor.cpp
+    Presets.cpp)
 
 target_compile_definitions(TaubenBox PUBLIC
     JUCE_WEB_BROWSER=0
