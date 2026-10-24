@@ -16,9 +16,9 @@ PrivilegesRequired=admin
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
 WizardStyle=modern
-WizardImageFile=assets\wizard_large.bmp
-WizardSmallImageFile=assets\wizard_small.bmp
-SetupIconFile=assets\taubenbox.ico
+WizardImageFile=wizard_large.bmp
+WizardSmallImageFile=wizard_small.bmp
+SetupIconFile=taubenbox.ico
 OutputBaseFilename=Tauben-Box-Setup-{#MyAppVersion}
 Compression=lzma2/max
 SolidCompression=yes
@@ -39,7 +39,7 @@ english.FinishedHeadingLabel=The pigeons have landed!
 english.FinishedLabel=[name] has been installed. Start your DAW and rescan your VST3 plugins.
 
 [Files]
-Source: "..\build\TaubenBox_artefacts\Release\VST3\Tauben-Box.vst3\*"; DestDir: "{commoncf64}\VST3\Tauben-Box.vst3"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "build\TaubenBox_artefacts\Release\VST3\Tauben-Box.vst3\*"; DestDir: "{commoncf64}\VST3\Tauben-Box.vst3"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Run]
 Filename: "{win}\explorer.exe"; Parameters: """{commoncf64}\VST3"""; Description: "VST3-Ordner öffnen / Open VST3 folder"; Flags: postinstall nowait skipifsilent unchecked
